@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zapret-Vyezda.ru - Проверка запретов РФ</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+
+  <a href="index.html" class="logo">
+    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+    <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+  </a>
+
+  <ul class="menu">
+    <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+    <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+    <li><a href="payment.html">Способы оплаты</a></li>
+  </ul>
+
+  <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+    <span class="header-box__icon"><img src="img/mail.svg" alt=""></span>
+    <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+  </a>
+
+</div>
+
+<div class="wrapper">
+
+  <div class="content">
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo">
+              <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+              <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+            </a>
+
+            <ul class="menu">
+              <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+              <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+              <li><a href="payment.html">Способы оплаты</a></li>
+            </ul>
+
+            <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+              <span class="header-box__icon"><img src="img/mail.svg" alt=""></span>
+              <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+            </a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home home-departure">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Проверка запрета на выезд за границу</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-12">
+            <h1>Проверка <strong>запрета на выезд за границу</strong></h1>
+            <div class="box-text">
+              <p>Проверка наличия оснований для неразрешения выезда за границу гражданам РФ, проверка производится по
+                официальным открытым базам Российской Федерации</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5">
+
+            <form method="post" class="form-quiz">
+
+              <div class="form-quiz__content">
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <label><input type="text" name="name" placeholder="ФИО*:"></label>
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Регион проверки*:">Регион проверки*:</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+
+                    <label class="label-date">
+                      <span class="input-text">Дата рождения*:</span>
+                      <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                      <span class="input-icon"><img src="img/arrow-bottom.svg" alt=""></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <div class="result-of-checking">
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/mvd.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Информация из базы МВД</h4>
+                          <p class="color-green">Проверка выполнена!</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/check.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/fss.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Запрос в базу в базу ФНС</h4>
+                          <p class="color-blue">Идет сбор информации... 18.9 сек</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/refresh.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/herb3.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Запрос в базу в базу ФССП</h4>
+                          <p class="color-red">Возможен запрет!</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/close.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-total">
+                        <h3>Результат проверки: <span class="color-red">Возможен запрет!</span></h3>
+
+                        <div class="answer">
+                          <h5>Предварительный ответ на ваш запрос носит справочный характер</h5>
+                          <div class="box-text">
+                            <p>Для детального отчета оплатите полный запрос, после оплаты вам будет предоставлен отчет о
+                              возможности выезда за границу с примером можно ознакомится ниже. Стоимость отчета 298
+                              руб</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group-my">
+                        <div class="label-text"><strong>Эл. почта</strong>/Телефон</div>
+                        <label><input type="text" placeholder="ivanov@mail.ru" name="mail"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-quiz__footer">
+                <div class="form-quiz__nav"></div>
+
+                <button class="btn btn-accent btn-submit" type="submit">Перейти к оплате 298 руб ></button>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox" checked class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Согласен(а) с правилами предоставления данных и политикой обработки персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <div class="form-quiz-info">
+              <div class="statistics-box">
+                <h3>Статистика запретов для граждан
+                  <span>За 2020 год</span>
+                </h3>
+
+                <div class="statistics-wrapper">
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">15 202 3452</div>
+                    <div class="statistics-box__text">
+                      <p>Проверок в базе данных ФССП</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num color-red">312 734</div>
+                    <div class="statistics-box__text">
+                      <p>Запретили выезд за границу</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">1 402 3452</div>
+                    <div class="statistics-box__text">
+                      <p>Граждан с задолженностями обнаружено</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">1 385 734</div>
+                    <div class="statistics-box__text">
+                      <p>Открытых исполнительных
+                        производств</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-box example-box-img">
+              <img src="img/screen.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <section class="report-example">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Пример отчета о запрете на выезд за границу</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="box-text">
+              <p>Запрос был сделан на данные:</p>
+                <ul>
+                  <li>
+                    <p>ФИО:</p> <span>Иванов Сергей Петрович</span>
+                  </li> 
+                  <li><p>Регион проверки:</p> <span>Самара</span></li> 
+                  <li><p>Дата рождения:</p>
+                  <span>12.02.1989</span>
+                </li>
+                </ul>
+              <p>Результат проверки: <span class="color-red">НАЛОЖЕН ЗАПРЕТ!</span></p>
+            </div>
+          </div>
+
+          <div class="col-12"><div class="report-example__img"><img src="img/screen.png" alt=""></div></div>
+
+          <div class="col-12">
+            <div class="button-group">
+              <a href="#" class="btn btn-accent">Проверить запрет</a>
+
+              <a href="#" class="links-accent links-view">Смотреть пример</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-content" id="ban">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="seo-content-head">
+              <div class="seo-content__icon"><img src="img/law.png" alt=""></div>
+              <div class="seo-content__body">
+                <div class="box-text">
+                  <p>Статья 67. Временные ограничения на выезд должника из Российской Федерации
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="box-text">
+              <p>1. Судебный пристав-исполнитель вправе по заявлению взыскателя или собственной инициативе вынести
+                постановление о временном ограничении на выезд должника из Российской Федерации при неисполнении
+                должником-гражданином или должником, являющимся индивидуальным предпринимателем, в установленный для
+                добровольного исполнения срок без уважительных причин содержащихся в выданном судом или являющемся
+                судебным актом исполнительном документе следующих требований:</p>
+
+              <ul>
+                <li>1) требований о взыскании алиментов, возмещении вреда, причиненного здоровью, возмещении вреда в
+                  связи
+                  со смертью кормильца, имущественного ущерба и (или) морального вреда, причиненных преступлением, если
+                  сумма задолженности по такому исполнительному документу превышает <a href="#"
+                                                                                       class="d-inline links-accent">10
+                    000 рублей</a>;
+                </li>
+                <li>2) требований неимущественного характера;</li>
+                <li>3) иных требований, если сумма задолженности по исполнительному документу (исполнительным
+                  документам)
+                  <a href="#" class="d-inline links-accent">составляет 30 000 рублей и более</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+            <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+          </a>
+
+          <ul class="menu">
+            <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+            <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+            <li><a href="payment.html">Способы оплаты</a></li>
+          </ul>
+
+          <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+            <span class="header-box__icon"><img src="img/mail-footer.svg" alt=""></span>
+            <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

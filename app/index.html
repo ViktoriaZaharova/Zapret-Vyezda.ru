@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zapret-Vyezda.ru - Проверка запретов РФ</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+
+  <a href="index.html" class="logo">
+    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+    <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+  </a>
+
+  <ul class="menu">
+    <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+    <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+    <li><a href="payment.html">Способы оплаты</a></li>
+  </ul>
+
+  <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+    <span class="header-box__icon"><img src="img/mail.svg" alt=""></span>
+    <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+  </a>
+
+</div>
+
+<div class="wrapper">
+
+  <div class="content">
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo">
+              <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+              <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+            </a>
+
+            <ul class="menu">
+              <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+              <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+              <li><a href="payment.html">Способы оплаты</a></li>
+            </ul>
+
+            <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+              <span class="header-box__icon"><img src="img/mail.svg" alt=""></span>
+              <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+            </a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <h1>Проверка <strong>запрета на въезд в РФ</strong></h1>
+            <div class="box-text">
+              <p>Проверка наличия оснований для неразрешения въезда на территорию Российской Федерации иностранным
+                гражданам
+                и лицам без гражданства по линии МВД России. </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="attention">
+              <div class="attention-icon"><img src="img/attention.svg" alt=""></div>
+              <div class="attention-text">
+                <p>Нажимая на кнопку "Отправить запрос" Вы соглашаетесь на передачу и обработку своих
+                  персональных
+                  данных
+                  МВД России в соответствии с Федеральным законом РФ от 27 июля 2006 года № 152-ФЗ «О
+                  персональных
+                  данных».</p>
+              </div>
+            </div>
+
+            <form method="post" class="form-quiz">
+
+              <div class="form-quiz__content">
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <label><input type="text" name="name" placeholder="ФИО*:"></label>
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Пол*">Пол*</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+
+                    <label class="label-date">
+                      <span class="input-text">Дата рождения*:</span>
+                      <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                      <span class="input-icon"><img src="img/arrow-bottom.svg" alt=""></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Выберите гражданство*:">Выберите гражданство*:</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Выберите тип документа*:">Выберите тип документа*:</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Выдавшая страна или организация:*">Выдавшая страна или организация:*:</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <label>
+                      <select name="select" class="select-my js-example-basic-single">
+                        <option value="Выдавшая страна или организация:*:">Выдавшая страна или организация:*</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+                    <div class="form-group">
+                      <label><input type="text" name="number_doc" placeholder="Серия и номер документа*:"></label>
+                      <label class="label-date">
+                        <span class="input-text">Действителен до:</span>
+                        <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                      </label>
+                    </div>
+                    <label><input type="text" name="mail" placeholder="Адрес эл. почты*:"></label>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="form-quiz__content-slide">
+                    <div class="result-of-checking">
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/mvd.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Информация из базы МВД</h4>
+                          <p class="color-green">Проверка выполнена!</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/check.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/fss.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Запрос в базу в базу ФНС</h4>
+                          <p class="color-blue">Идет сбор информации... 18.9 сек</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/refresh.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-box">
+                        <div class="result-of-checking-box__img"><img src="img/herb3.png" alt=""></div>
+                        <div class="result-of-checking-box__body">
+                          <h4>Запрос в базу в базу ФССП</h4>
+                          <p class="color-red">Возможен запрет!</p>
+                        </div>
+                        <div class="result-of-checking-box__icon"><img src="img/close.png" alt=""></div>
+                      </div>
+
+                      <div class="result-of-checking-total">
+                        <h3>Результат проверки: <span class="color-red">Возможен запрет!</span></h3>
+
+                        <div class="answer">
+                          <h5>Ответ на Ваш запрос носит справочный характер</h5>
+                          <div class="box-text">
+                            <p>Для детального отчета оплатите полный запрос, после оплаты вам будет предоставлена
+                              справка о возможности въезда на территорию РФ. Стоимость справки 198 руб</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-quiz__footer">
+                <div class="form-quiz__nav"></div>
+
+                <button class="btn btn-accent btn-submit" type="submit">Перейти к оплате 198 руб ></button>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox" checked class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Согласен(а) с правилами предоставления данных и политикой обработки персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <div class="form-quiz-info">
+              <div class="statistics-box">
+                <h3>Статистика запретов для граждан
+                  <span>За 2020 год</span>
+                </h3>
+
+                <div class="statistics-wrapper">
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">15 202 3452</div>
+                    <div class="statistics-box__text">
+                      <p>Проверок в базе данных въезжающих на територию РФ</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num color-red">178 734</div>
+                    <div class="statistics-box__text">
+                      <p>Запретили въезд на территорию РФ</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">102 3452</div>
+                    <div class="statistics-box__text">
+                      <p>Граждан с задолженностями обнаружено</p>
+                    </div>
+                  </div>
+                  <div class="statistics-box-it">
+                    <div class="statistics-box__num">185 734</div>
+                    <div class="statistics-box__text">
+                      <p>Открытых исполнительных
+                        производств</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-box">
+              <div class="example-box__title">
+                <div class="example-box__title-top">
+                  <h3>Пример справки о возможности въезда в РФ</h3>
+                </div>
+
+                <div class="example-box__title-bottom">
+                  <img src="img/herb2.png" alt="" class="example-box__title-bg">
+
+                  <h4>Запрос выполнен на данные:</h4>
+                  <div class="inquiry">
+                    <ul class="list-inquiry">
+                      <li>
+                        <p>Фамилия:</p><strong>Эрматов</strong>
+                      </li>
+                      <li>
+                        <p>Имя:</p><strong>Баходир</strong>
+                      </li>
+                      <li>
+                        <p>Отчество:</p><strong>Абдукаримович</strong>
+                      </li>
+                      <li>
+                        <p>Пол:</p><span>Мужской</span>
+                      </li>
+                      <li>
+                        <p>Дата рождения:</p><strong> 1.08.1981</strong>
+                      </li>
+                      <li>
+                        <p>Гражданство:</p><strong>Узбекистан</strong>
+                      </li>
+                    </ul>
+                    <ul class="list-inquiry">
+                      <li>
+                        <p>Тип документа:</p><strong>Заграничный биометрический</strong>
+                      </li>
+                      <li>
+                        <p>Номер документа:</p><strong>АА 4488792</strong>
+                      </li>
+                      <li>
+                        <p>Дата дейтсвительности документа:</p><span>2024-12-17</span>
+                      </li>
+                      <li>
+                        <p>Выдавшая страна (орг):</p><strong>Узбекистан</strong>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="alert-box">
+                    <div class="alert-box__icon"><img src="img/alert.svg" alt=""></div>
+                    <div class="alert-box__body">
+                      <p>Сведения сгенерированны на дату обращение, актуальность сведений подтверждается только
+                        обновленным отчетом. Вся информация предоставлена официальной базой мвд.рф </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="example-box__content">
+                <div class="example-box__content-top"><h4>Информация о возможности въезда в РФ</h4></div>
+                <div class="example-box__content-bottom">
+                  <div class="example-box__content-item bg-grey">
+                    <p>Результат:</p>
+                    <div class="box-text color-green">
+                      <strong>Оснований, препятствующих въезду на территорию Российской Федерации, по линии МВД России
+                        на данный момент не обнаружено</strong>
+                    </div>
+                  </div>
+                  <div class="example-box__content-item">
+                    <p>Дата обработки запроса:</p>
+                    <div class="box-text">
+                      <span>08.12.2021 </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="example-box__body">
+                <h4>Сформированно из данных базы МВД.РФ</h4>
+                <div class="example-box__icon"><img src="img/herb.png" alt=""></div>
+              </div>
+              <div class="example-box__footer">
+                <div class="alert-box">
+                  <div class="alert-box__icon"><img src="img/alert.svg" alt=""></div>
+                  <div class="alert-box__body">
+                    <p>Информация является полностью сгенерированным текстом из официальный базы МВД.РФ, предоставление
+                      данной информации в органы проверки возможности въезда в РФ, не явялется обязательным условием.
+                      Справка не несет в себе юридическую силу.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <section class="seo-content" id="ban">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="seo-content-head">
+              <div class="seo-content__icon"><img src="img/law.png" alt=""></div>
+              <div class="seo-content__body">
+                <div class="box-text">
+                  <p>Федеральный закон от 15.08.1996 N 114-ФЗ
+                    (ред. от 07.04.2020)
+                    "О порядке выезда из Российской Федерации и
+                    въезда в Российскую федерацию"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="box-text">
+              <p>Иностранные граждане или лица без гражданства обязаны при въезде в Российскую
+                Федерацию и выезде из Российской Федерации предъявить действительные документы,
+                удостоверяющие их личность и признаваемые Российской Федерацией в этом качестве, и визу, если
+                иное не предусмотрено международными договорами Российской Федерации, настоящим
+                Федеральным законом или казами Президента Российской Федерации.
+                (в ред. Федеральных законов от <a href="#" class="links-accent d-inline" target="_blank">24.06.1999 N
+                  118-ФЗ, от 10.01.2003 N 7-ФЗ, от 01.12.2007 N 310-ФЗ,
+                  от 13.05.2008 N 65-ФЗ, от 07.06.2017 N 111-ФЗ)</a>
+                Лица без гражданства осуществляют въезд в Российскую Федерацию и выезд из Российской
+                Федерации в соответствии с правилами, установленными настоящим Федеральным законом для
+                иностранных граждан, если иное не предусмотрено международными договорами Российской
+                Федерации, настоящим Федеральным законом, другими федеральными законами или указами
+                Президента Российской Федерации.
+                (в ред. Федеральных законов от 10.01.2003 N 7-ФЗ, от 13.05.2008 N 65-ФЗ, от 07.06.2017 N 111-ФЗ)
+                Контроль за наличием виз или иных разрешений на въезд лиц в иностранное государство
+                является обязанностью транспортной компании (перевозчика пассажиров), если иное не
+                предусмотрено международным договором Российской Федерации.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+            <span class="logo-text">
+            <span class="logo-name">Zapret-Vyezda.ru</span>
+            <span class="logo-subtitle">Проверка запретов РФ</span>
+          </span>
+          </a>
+
+          <ul class="menu">
+            <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
+            <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+            <li><a href="payment.html">Способы оплаты</a></li>
+          </ul>
+
+          <a href="mailto:info@zapret-vyezda.ru" class="header-box">
+            <span class="header-box__icon"><img src="img/mail-footer.svg" alt=""></span>
+            <span class="header-box__body">
+            <span class="span">наша почта</span>
+            <span class="link-address">info@zapret-vyezda.ru</span>
+          </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

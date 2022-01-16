@@ -1,0 +1,1075 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+
+html, body
+  overflow-x: hidden
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 15px
+  box-sizing: border-box
+  font-family: $default-font
+  border: 1px solid #828282
+    radius: 2px
+  background: #fff
+  width: 100%
+  height: 60px
+  font-size: 16px
+  color: #000
+  &::placeholder
+    color: #4F4F4F
+
+  &:hover
+    outline: none
+    box-shadow: none
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 30px
+
+button, .btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 5px
+  outline: none
+  box-shadow: none
+  cursor: pointer
+  transition: .3s ease
+  width: 100%
+  height: 60px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-accent
+  background: $accent
+  color: #fff
+  &:hover, &:focus
+    background: $hover
+    color: #fff
+
+.btn-burger
+  display: none
+  width: 20px
+  margin: 0 0 0 20px
+  cursor: pointer
+  span
+    width: 100%
+    height: 2px
+    background: $accent
+    border-radius: 2px
+    display: block
+    margin: 0 0 3px
+    &:last-child
+      margin: 0
+
+.btn-close
+  position: relative
+  width: 20px
+  height: 20px
+  margin: 0 0 20px auto
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $accent
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+h1
+  width: 100%
+  text-transform: uppercase
+  color: #333333
+  font-size: 48px
+  margin: 0 0 10px
+
+h2
+  color: #1D1D1B
+  font-size: 36px
+  font-weight: bold
+  width: 100%
+
+.box-text
+  color: #4F4F4F
+  font-size: 18px
+  line-height: 120%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+strong
+  display: inline-block
+  font-weight: bold
+
+.links-accent
+  color: #588FD4
+
+.wrapper
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+  background: $footer
+  color: #fff
+  padding: 17px 0 25px
+  .logo
+    color: #fff
+  .logo-name
+    color: #F2F2F2
+  .menu
+    li
+      a
+        color: #fff
+  .header-box
+    color: #fff
+
+.color-red
+  color: #EB5757
+
+.breadcrumb-nav
+  width: 100%
+  margin: 0 0 36px
+
+.breadcrumb
+  width: 100%
+  margin: 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  font-size: 12px
+  color: #000
+
+
+.breadcrumb-item
+  a
+    color: #588FD4
+    display: flex
+    align-items: center
+    &:after
+      content: '>'
+      margin: 0 5px
+      display: inline-block
+
+.breadcrumb-item + .breadcrumb-item
+  padding: 0
+  &:before
+    display: none
+
+/*==========  header  ==========*/
+header
+  padding: 17px 0 25px
+  background: #fff
+
+.logo
+  display: flex
+  align-items: center
+  color: #333333
+  font-size: 14px
+  &:hover
+    color: inherit
+
+.logo-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 58px
+  min-width: 58px
+
+.logo-text
+  margin: 0 0 0 14px
+
+.logo-name
+  font-size: 15px
+  font-weight: 900
+  color: #2862AC
+  display: block
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  font-size: 14px
+  font-weight: bold
+  li
+    margin: 0 48px 0 0
+    &:last-child
+      margin: 0
+
+    a
+      color: #333333
+      padding: 0 0 6px
+      border-bottom: 2px solid transparent
+      &:hover
+        color: $accent
+    .current
+      border-bottom: 2px solid #588FD4
+
+
+.header-box
+  display: flex
+  align-items: center
+  color: #4F4F4F
+  font-size: 14px
+  margin: 0 -45px 0 0
+  &:hover
+    color: inherit
+  &__icon
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    margin: 0 7px 0 0
+    width: 24px
+    height: 24px
+    min-width: 24px
+  span
+    display: block
+
+.link-address
+  font-size: 16px
+  font-weight: bold
+  
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 5
+  background: #fff
+  padding: 30px
+  width: 100%
+  max-width: 280px
+  height: 100%
+  overflow-y: auto
+  filter: drop-shadow(10.8992px 4.35967px 4.35967px rgba(0, 0, 0, 0.25))
+
+
+/*==========  header end  ==========*/
+
+/*==========  home  ==========*/
+.home
+  background: #F8F8F8
+  padding: 65px 0 35px
+  .box-text
+    max-width: 660px
+    color: #4F4F4F
+    font-size: 18px
+    line-height: 120%
+    margin: 0 0 49px
+
+.attention
+  display: flex
+  align-items: flex-start
+  margin: 0 0 31px
+  font-size: 12px
+  position: relative
+  z-index: 2
+  line-height: 120%
+  &-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 6px 0 0
+    width: 24px
+    min-width: 24px
+    height: 24px
+
+.form-quiz
+  position: relative
+  z-index: 2
+  input
+    background: transparent
+
+.form-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0
+  label
+    width: calc(50% - 8px)
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 20px 0 0
+  cursor: pointer
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 3px 12px 0 0
+  width: 16px
+  height: 16px
+  min-width: 16px
+  border: 2px solid #333333
+    radius: 3px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 8px
+    height: 6px
+
+.inp-check:checked + .checkbox-custom
+  &:before
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+
+.slick-prev
+  display: none !important
+
+.btn-submit
+  display: none
+  margin: 70px 0 0
+
+.counter-slide
+  display: flex
+  align-items: center
+  margin: 0 0 0 3px
+
+.counter-slide__cp
+  margin: 0 3px 0 0
+
+
+
+.form-quiz-info
+  width: 100%
+  padding: 14px 0 0 110px
+  h3
+    color: #333333
+    font-size: 28px
+    width: fit-content
+    font-weight: 500
+    span
+      display: block
+      font-size: 14px
+      text-align: right
+      padding: 0 50px 0 0
+
+
+.statistics-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 48px 0 0 80px
+
+.statistics-box
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    width: 756px
+    height: 390px
+    background: url("../img/map-img.svg") no-repeat center
+      size: 100%
+    top: -13px
+    right: -116px
+    z-index: -1
+
+.statistics-box-it
+  color: #2862AC
+  font-size: 14px
+  font-weight: 500
+  margin: 0 0 27px
+  max-width: 204px
+  width: 100%
+
+.statistics-box__num
+  color: #0D2C56
+  font-size: 36px
+  font-weight: bold
+
+.statistics-box__num.color-red
+  color: #EB5757
+
+.statistics-box__text
+  padding: 0 8px 10px
+
+.label-date
+  position: relative
+  input
+    padding: 24px 54px 0 15px
+
+.input-text
+  position: absolute
+  top: 6px
+  left: 15px
+  color: #4F4F4F
+  font-size: 14px
+  font-weight: 500
+
+.input-icon
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 54px
+  background: #588FD4
+  border-radius: 0 2px 2px 0
+
+.select2-container
+  .select2-selection--single
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border: 1px solid #828282
+      radius: 2px
+
+.select2-container .select2-selection--single .select2-selection__rendered
+  padding: 0 54px 0 15px
+  width: 100%
+  display: flex
+  align-items: center
+  color: #4F4F4F
+  font-size: 16px
+
+.select2-container--default .select2-selection--single
+  background: transparent
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: normal
+  height: 100%
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  height: 100%
+  width: 54px
+  background: #588FD4 url("../img/arrow-bottom.svg") no-repeat center
+    size: 14px
+  border: none
+  b
+    display: none
+
+.select2-search--dropdown
+  display: none
+
+.select2-dropdown
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+  background: #ffffff
+  border: none
+    radius: 5px
+  padding: 0
+
+.select2-results
+  padding: 10px 0 20px
+
+.select2-results__options
+  padding: 0
+  color: #4F4F4F
+  font-size: 14px
+
+.select2-results__option
+  padding: 12px 23px 12px
+
+
+.select2-container--default .select2-results__option--selected, .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+  background: #F2F2F2
+  color: #4F4F4F
+
+.ui-datepicker.ui-widget.ui-widget-content
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+  border: none
+    radius: 5px
+  background: #F8F8F8
+  padding: 10px 37px
+  width: 100%
+  font-family: $default-font
+  max-width: 310px
+
+.ui-datepicker .ui-datepicker-header
+  border: none
+    radius: 0
+  background: transparent
+  padding: 0
+  display: flex
+  align-items: center
+  width: 100%
+
+
+  .ui-datepicker-title
+    color: #4F4F4F
+    font-size: 18px
+    font-weight: normal
+    margin: 0 auto
+    line-height: normal
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+  position: relative
+  width: 20px
+  height: 20px
+  right: 0
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  outline: none
+  .ui-icon
+    display: none
+  &:hover, &:focus
+    outline: none
+    border: none
+      radius: 0
+
+.ui-datepicker .ui-datepicker-prev
+  background: url("../img/left.svg") no-repeat center
+    size: 6px
+
+.ui-datepicker .ui-datepicker-next
+  background: url("../img/right.svg") no-repeat center
+    size: 6px
+  order: 1
+
+.ui-datepicker table
+  margin: 3px 0 0
+
+  font-size: 12px
+
+.ui-datepicker-calendar
+  margin: 3px 0 0
+  td, th
+    font-size: 18px
+    font-weight: normal
+    width: 30px
+    height: 30px
+  tbody
+    td
+      font-size: 12px
+      text-align: center
+      vertical-align: center
+      padding: 0
+      border: none
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  border: none
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 12px
+  padding: 0
+  color: #333333
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+  color: #333333
+  opacity: .5
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary
+  opacity: .5
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+  background: transparent
+  color: #333333
+
+.ui-datepicker-week-end + .ui-datepicker-week-end
+  color: #EB5757
+  .ui-state-default
+    color: #EB5757
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  background: $accent
+  color: #333
+
+.alert-box
+  display: flex
+  align-items: center
+  line-height: 150%
+  font-size: 8px
+  color: #4F4F4F
+  &__icon
+    width: 23px
+    height: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    width: calc(100% - 23px)
+    padding: 0 0 0 9px
+
+.example-box
+  filter: drop-shadow(10.8992px 4.35967px 4.35967px rgba(0, 0, 0, 0.25))
+  width: 100%
+  background: #fff
+  max-width: 571px
+  z-index: 1
+  position: relative
+  display: none
+  margin: 0 0 0 auto
+  h4
+    font-size: 14px
+    color: #fff
+  &__title
+    position: relative
+
+    &-top
+      padding: 16px 18px 19px
+      background: #2862AC
+      border-radius: 6px 6px 0 0
+      color: #fff
+      h3
+        font-size: 21px
+    &-bottom
+      font-family: 'Open Sans', sans-serif
+      position: relative
+      overflow: hidden
+      padding: 28px 14px 14px
+      .alert-box
+        margin: 20px 0 0
+        max-width: 420px
+    h4
+      width: 100%
+      margin: 0 0 25px
+      font-size: 15px
+      font-weight: 600
+      color: #1B2E45
+
+    &-bg
+      position: absolute
+      right: 0
+      top: 0
+      opacity: .10
+      max-width: 571px
+      width: 100%
+  &__footer
+    box-shadow: 0px 16.4236px 48.6624px rgba(0, 0, 0, 0.07), 0px 8.1851px 17.7626px rgba(0, 0, 0, 0.046714), 0px 5.10686px 8.62341px rgba(0, 0, 0, 0.0368662), 0px 3.20758px 4.22735px rgba(0, 0, 0, 0.0282676), 0px 1.61253px 1.6715px rgba(0, 0, 0, 0.0176825)
+    background: rgba(#6FCF97, .15)
+    padding: 19px 7px 22px 11px
+    font-family: 'Open Sans', sans-serif
+  &__body
+    width: 100%
+    background: #2D9CDB
+    position: relative
+    overflow: hidden
+    padding: 8px 13px 13px 16px
+    font-family: 'Open Sans', sans-serif
+    z-index: 1
+  &__icon
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    filter: blur(0.60828px)
+    max-width: 90px
+    width: 100%
+    z-index: -1
+
+  &__content
+    width: 100%
+    font-family: 'Open Sans', sans-serif
+    &-top
+      width: 100%
+      padding: 10px 18px
+      background: #2D9CDB
+    &-bottom
+      width: 100%
+      padding: 31px 4px
+
+.example-box__content-item
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  color: #4F4F4F
+  font-size: 10px
+  margin: 0 0 40px
+
+  &:last-child
+    margin: 0
+  p
+    padding: 10px 8px
+    font-weight: bold
+  .box-text
+    width: 50%
+    font-weight: normal
+    font-size: 10px
+    padding: 10px 10px 10px 8px
+    line-height: 150%
+    margin: 0
+    strong
+      font-weight: bold
+  .color-green
+    color: #007349
+
+.color-green
+  color: #128200
+
+.color-blue
+  color: #2862AC
+
+.color-red
+  color: #AC2828
+
+.example-box__content-item.bg-grey
+  background: #F8F8F8
+
+.inquiry
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  filter: blur(2.43312px)
+
+.list-inquiry
+  color: #4F4F4F
+  font-size: 10px
+  font-weight: bold
+  margin: 0 34px 0 0
+  &:last-child
+    margin: 0
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 10px
+  span
+    font-weight: normal
+  p
+    margin: 0 5px 0 0
+
+.result-of-checking
+  width: 100%
+
+.result-of-checking-box
+  width: 100%
+  margin: 0 0 26px
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: 500
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 65px
+  &__body
+    width: calc(100% - 65px - 28px)
+    padding: 0 0 0 22px
+  &__icon
+    width: 28px
+    display: flex
+    align-items: center
+    justify-content: center
+  h3
+    color: #333333
+    font-weight: 500
+    font-size: 20px
+    margin: 0 0 10px
+
+  &:last-child
+    margin: 0
+
+.result-of-checking-total
+  width: 100%
+  margin: 52px 0 0
+  h3
+    margin: 0 0 11px
+    font-size: 22px
+    span
+      font-weight: 500
+.answer
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  background: rgba(231, 231, 231, 0.6)
+  width: 100%
+  padding: 15px 20px
+  h5
+    font-size: 17px
+    font-weight: 500
+    color: #B40000
+    margin: 0 0 11px
+  .box-text
+    font-size: 14px
+    line-height: 120%
+    margin: 0
+
+.example-box-img
+  filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+  max-width: 590px
+  margin: 0 0 0 auto
+/*==========  home end ==========*/
+
+
+/*==========  seo section ==========*/
+.seo-content
+  padding: 50px 0 85px
+  .box-text
+    color: #000
+    line-height: 150%
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 73px
+  &__body
+    width: calc(100% - 73px)
+    padding: 0 0 0 35px
+
+.seo-content-head
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 30px
+
+/*==========  seo section end ==========*/
+
+
+/*==========  payment ==========*/
+.title-section
+  background: #F8F8F8
+  padding: 12px 0 25px
+  h2
+    text-transform: uppercase
+
+.page
+  padding: 115px 0 28px
+  h1
+    margin: 0 0 25px
+    font-weight: 500
+
+.section-payment
+  .box-text
+    max-width: 878px
+    font-size: 16px
+
+.list-pay
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 48px 0 20px
+  li
+    margin: 0 50px 10px 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.pay1
+  max-width: 88px
+
+.pay2
+  max-width: 88px
+
+.pay3
+  max-width: 58px
+
+.pay4
+  max-width: 163px
+
+/*==========  payment end ==========*/
+
+/*==========  contacts ==========*/
+.contacts-page
+  padding: 65px 0
+
+.contacts-box
+  margin: 35px 0 0
+  display: flex
+  align-items: flex-start
+  font-size: 14px
+  color: rgba(#4F4F4F, .75)
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 24px 0 0
+    width: 30px
+    height: 30px
+  &__body
+    width: calc(100% - 30px)
+    padding: 0 0 0 5px
+  h3
+    margin: 0 0 5px
+    color: #111111
+    font-size: 16px
+    font-weight: bold
+  .links
+    color: rgba(#111, .75)
+    font-size: 16px
+  .mail
+    font-weight: 700
+    color: rgba(#4F4F4F, .75)
+/*==========  contacts end ==========*/
+
+
+.home-departure
+  padding: 15px 0 35px
+  .btn-submit
+    margin: 0
+
+.form-group-my
+  margin: 49px 0 0
+
+.label-text
+  text-align: right
+
+.report-example
+  padding: 122px 0 70px
+
+  background: #F2F2F2
+  h2
+    margin: 0 0 80px
+    text-transform: uppercase
+    font-size: 40px
+  .box-text
+    ul
+      margin: 0 0 20px
+      li
+        display: flex
+        align-items: center
+
+      p
+        margin: 0 5px 0 0
+
+.report-example__img
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 35px 0
+  filter: blur(2px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+.button-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .btn
+    max-width: 303px
+
+.links-view
+  margin: 0 0 0 77px
+  color: #2862AC
+  font-size: 18px
+  font-weight: 500
+
+
+@import "media"
+// Всегда в конце

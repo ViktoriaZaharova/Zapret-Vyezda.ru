@@ -1,0 +1,36 @@
+{
+  "name": "my-gulp-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SytnikArtem/my-gulp-project.git"
+  },
+  "author": "SytnikArtem\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b_Artem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SytnikArtem/my-gulp-project/issues"
+  },
+  "homepage": "https://github.com/SytnikArtem/my-gulp-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.1"
+  }
+}
