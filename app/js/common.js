@@ -1,8 +1,13 @@
+$('.js-example-basic-single').select2({
+    width: '100%'
+});
+
 $(document).ready(function () {
 
     $('.form-quiz__content').slick({
         slidesToShow: 1,
         fade: true,
+        swipe: false,
         infinite: false,
         adaptiveHeight: true,
         appendArrows: '.form-quiz__nav',
@@ -34,6 +39,7 @@ $(document).ready(function () {
     setProgress(0);
 });
 
+
 $(".form-quiz__content").on("afterChange", function (event) {
     if ($(this).find('.slick-slide').last().hasClass('slick-active')) {
         // $('.form-quiz').addClass('form-quiz-result');
@@ -42,25 +48,11 @@ $(".form-quiz__content").on("afterChange", function (event) {
         $('.form-quiz-info').hide();
         $('.box-instructions').fadeIn();
         $('.btn-submit').css('display', 'flex');
-    }
-});
 
-$('.js-example-basic-single').select2({
-    width: '100%'
-});
-
-$('.go_to').click(function (e) {
-    e.preventDefault();
-    var scroll_el = $(this).attr('href');
-    if ($(scroll_el).length !== 0) {
-        $('html, body').animate({
-            scrollTop: $(scroll_el).offset().top
-        }, 500);
     }
 
-    $('.mobile-menu').fadeOut();
-    return false;
 });
+
 
 $('.btn-burger').on('click', function () {
     $('.mobile-menu').fadeToggle();
@@ -80,20 +72,21 @@ $('.menu li a').each(function () {
 });
 // end
 
-$( function() {
+
+$(function () {
     //Сменим язык календаря на русский
     $.datepicker.setDefaults(
         {
             closeText: 'Закрыть',
             prevText: '',
             currentText: 'Сегодня',
-            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
-                'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-            monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
-                'Июл','Авг','Сен','Окт','Ноя','Дек'],
-            dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-            dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+                'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
             weekHeader: 'Не',
             dateFormat: 'dd.mm.yy',
             firstDay: 1,
@@ -104,7 +97,20 @@ $( function() {
     //Добавим код календаря
     $('.datepicker').datepicker({
         showOtherMonths: true,
-        selectOtherMonths: true
+        selectOtherMonths: true,
     });
-} );
+});
+
+$('.datepicker').inputmask({
+    alias: "datetime",
+    inputFormat: "dd.mm.yyyy",
+    outputFormat: "dd.mm.yyyy",
+    placeholder: "дд.мм.гггг",
+    min: '01.01.1920',
+    // max: maxDate,
+    showMaskOnHover: false,
+});
+
+
+
 
