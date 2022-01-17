@@ -1001,6 +1001,20 @@ header {
   display: block;
   text-align: center; }
 
+.loader-icon {
+  margin: 0 auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 80px;
+  width: 100%; }
+
 .lds-default {
   display: inline-block;
   position: relative;
