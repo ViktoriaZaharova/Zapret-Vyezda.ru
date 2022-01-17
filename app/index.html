@@ -41,7 +41,7 @@
 
   <ul class="menu">
     <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
-    <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+    <li><a href="departure.html">Запрет на выезд из РФ</a></li>
     <li><a href="payment.html">Способы оплаты</a></li>
   </ul>
 
@@ -73,7 +73,7 @@
 
             <ul class="menu">
               <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
-              <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+              <li><a href="departure.html">Запрет на выезд из РФ</a></li>
               <li><a href="payment.html">Способы оплаты</a></li>
             </ul>
 
@@ -139,7 +139,7 @@
 
                     <label class="label-date">
                       <span class="input-text">Дата рождения*:</span>
-                      <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                      <input type="text" name="birthdate" class="datepicker" placeholder="__.__.____">
                       <span class="input-icon"><img src="img/arrow-bottom.svg" alt=""></span>
                     </label>
                   </div>
@@ -183,7 +183,7 @@
                       <label><input type="text" name="number_doc" placeholder="Серия и номер документа*:"></label>
                       <label class="label-date">
                         <span class="input-text">Действителен до:</span>
-                        <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                        <input type="text" name="datepicker" class="datepicker" placeholder="__.__.____">
                       </label>
                     </div>
                     <label><input type="text" name="mail" placeholder="Адрес эл. почты*:"></label>
@@ -192,11 +192,35 @@
 
                 <div class="slide">
                   <div class="form-quiz__content-slide">
+
+                    <div class="loader">
+                      <div class="loader-box">
+                        <div class="loader_content">
+                          <div class="lds-default">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                          <span class="loader-title_loading">Первичная проверка</span>
+                          <span class="loader-timer">15 секунд</span>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="result-of-checking">
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/mvd.png" alt=""></div>
                         <div class="result-of-checking-box__body">
-                          <h4>Информация из базы МВД</h4>
+                          <h3>Информация из базы МВД</h3>
                           <p class="color-green">Проверка выполнена!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/check.png" alt=""></div>
@@ -205,7 +229,7 @@
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/fss.png" alt=""></div>
                         <div class="result-of-checking-box__body">
-                          <h4>Запрос в базу в базу ФНС</h4>
+                          <h3>Запрос в базу в базу ФНС</h3>
                           <p class="color-blue">Идет сбор информации... 18.9 сек</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/refresh.png" alt=""></div>
@@ -214,17 +238,17 @@
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/herb3.png" alt=""></div>
                         <div class="result-of-checking-box__body">
-                          <h4>Запрос в базу в базу ФССП</h4>
+                          <h3>Запрос в базу в базу ФССП</h3>
                           <p class="color-red">Возможен запрет!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/close.png" alt=""></div>
                       </div>
 
                       <div class="result-of-checking-total">
-                        <h3>Результат проверки: <span class="color-red">Возможен запрет!</span></h3>
+                        <h2>Результат проверки: <span class="color-red">Возможен запрет!</span></h2>
 
                         <div class="answer">
-                          <h5>Ответ на Ваш запрос носит справочный характер</h5>
+                          <h3>Ответ на Ваш запрос носит справочный характер</h3>
                           <div class="box-text">
                             <p>Для детального отчета оплатите полный запрос, после оплаты вам будет предоставлена
                               справка о возможности въезда на территорию РФ. Стоимость справки 198 руб</p>
@@ -252,9 +276,9 @@
           <div class="col-12 col-lg-7">
             <div class="form-quiz-info">
               <div class="statistics-box">
-                <h3>Статистика запретов для граждан
+                <h2>Статистика запретов для граждан
                   <span>За 2020 год</span>
-                </h3>
+                </h2>
 
                 <div class="statistics-wrapper">
                   <div class="statistics-box-it">
@@ -381,7 +405,7 @@
       </div>
     </main>
 
-    <section class="seo-content" id="ban">
+    <div class="seo-content" id="ban">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -421,7 +445,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
   </div>
 
@@ -439,7 +463,7 @@
 
           <ul class="menu">
             <li><a href="index.html">Проверка запрета на въезд в РФ</a></li>
-            <li><a href="#ban" class="go_to">Запрет на выезд из РФ</a></li>
+            <li><a href="departure.html">Запрет на выезд из РФ</a></li>
             <li><a href="payment.html">Способы оплаты</a></li>
           </ul>
 
@@ -458,12 +482,13 @@
 </div>
 
 <script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
