@@ -192,37 +192,12 @@
 
                 <div class="slide">
                   <div class="form-quiz__content-slide">
-
-                    <div class="loader">
-                      <div class="loader-box">
-                        <div class="loader_content">
-                          <div class="loader-icon"><img src="img/refresh.png" alt=""></div>
-<!--                          <div class="lds-default">-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                          </div>-->
-                          <span class="loader-title_loading">Первичная проверка</span>
-                          <span class="loader-timer">15 секунд</span>
-                        </div>
-                      </div>
-                    </div>
-
                     <div class="result-of-checking">
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/mvd.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Информация из базы МВД</h3>
-                          <p class="color-green">Проверка выполнена!</p>
+                          <p class="color-green result-status">Проверка выполнена!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/check.png" alt=""></div>
                       </div>
@@ -231,23 +206,26 @@
                         <div class="result-of-checking-box__img"><img src="img/fss.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Запрос в базу в базу ФНС</h3>
-                          <p class="color-blue">Идет сбор информации... 18.9 сек</p>
+                          <p class="color-blue result-status">Идет сбор информации... 18.9 сек</p>
                         </div>
-                        <div class="result-of-checking-box__icon"><img src="img/refresh.png" alt=""></div>
+                        <div class="result-of-checking-box__icon">
+                          <div class="loader-icon"><div class="ring-1"></div></div>
+                          <img src="img/refresh.png" alt="" class="icon-hidden">
+                        </div>
                       </div>
 
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/herb3.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Запрос в базу в базу ФССП</h3>
-                          <p class="color-red">Возможен запрет!</p>
+                          <p class="color-red result-status">Возможен запрет!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/close.png" alt=""></div>
                       </div>
 
                       <div class="result-of-checking-total">
                         <h2>Результат проверки: <span class="color-red">Возможен запрет!</span></h2>
-
+                        <div class="loader-icon"><div class="ring-1"></div></div>
                         <div class="answer">
                           <h3>Ответ на Ваш запрос носит справочный характер</h3>
                           <div class="box-text">

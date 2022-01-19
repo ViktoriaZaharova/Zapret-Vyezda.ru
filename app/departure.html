@@ -135,7 +135,7 @@
 
                     <label class="label-date">
                       <span class="input-text">Дата рождения*:</span>
-                      <input type="text" name="datepicker" class="datepicker" value="__.__.____">
+                      <input type="text" name="birthdate" class="datepicker" placeholder="__.__.____">
                       <span class="input-icon"><img src="img/arrow-bottom.svg" alt=""></span>
                     </label>
                   </div>
@@ -143,36 +143,14 @@
 
                 <div class="slide">
                   <div class="form-quiz__content-slide">
-                    <div class="loader">
-                      <div class="loader-box">
-                        <div class="loader_content">
-                          <div class="loader-icon"><img src="img/refresh.png" alt=""></div>
-<!--                          <div class="lds-default">-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                            <div></div>-->
-<!--                          </div>-->
-                          <span class="loader-title_loading">Первичная проверка</span>
-                          <span class="loader-timer">15 секунд</span>
-                        </div>
-                      </div>
-                    </div>
+
 
                     <div class="result-of-checking">
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/mvd.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Информация из базы МВД</h3>
-                          <p class="color-green">Проверка выполнена!</p>
+                          <p class="color-green result-status">Проверка выполнена!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/check.png" alt=""></div>
                       </div>
@@ -181,16 +159,19 @@
                         <div class="result-of-checking-box__img"><img src="img/fss.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Запрос в базу в базу ФНС</h3>
-                          <p class="color-blue">Идет сбор информации... 18.9 сек</p>
+                          <p class="color-blue result-status">Идет сбор информации... 18.9 сек</p>
                         </div>
-                        <div class="result-of-checking-box__icon"><img src="img/refresh.png" alt=""></div>
+                        <div class="result-of-checking-box__icon">
+                          <div class="loader-icon"><div class="ring-1"></div></div>
+                          <img src="img/refresh.png" alt="" class="icon-hidden">
+                        </div>
                       </div>
 
                       <div class="result-of-checking-box">
                         <div class="result-of-checking-box__img"><img src="img/herb3.png" alt=""></div>
                         <div class="result-of-checking-box__body">
                           <h3>Запрос в базу в базу ФССП</h3>
-                          <p class="color-red">Возможен запрет!</p>
+                          <p class="color-red result-status">Возможен запрет!</p>
                         </div>
                         <div class="result-of-checking-box__icon"><img src="img/close.png" alt=""></div>
                       </div>
@@ -209,27 +190,12 @@
                       </div>
 
                       <div class="form-group-my">
-                        <ul class="nav nav-pills nav-tabs" id="pills-tab" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                               role="tab" aria-controls="pills-home" aria-selected="true">Эл. почта</a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                               role="tab" aria-controls="pills-profile" aria-selected="false">Телефон</a>
-                          </li>
-
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                               aria-labelledby="pills-home-tab">
-                            <label><input type="text" placeholder="ivanov@mail.ru" name="mail"></label>
-                          </div>
-                          <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                               aria-labelledby="pills-profile-tab">
-                            <label><input type="text" placeholder="ivanov@mail.ru" name="mail"></label>
-                          </div>
-                        </div>
+                        <label for="email">
+                          <span id="chooseEmail" class="input-toggle active" data-tab="1">Эл. почта</span> /
+                          <span id="chooseSMS" class="input-toggle" data-tab="2">Телефон</span>
+                        </label>
+                        <input type="email" class="input-tab active" placeholder="ivanov@mail.ru" id="email" name="email" required="required" data-tab="1">
+                        <input type="tel" class="input-tab" placeholder="+7(999)999-99-99" name="phone" required="required" data-tab="2">
                       </div>
                     </div>
                   </div>
@@ -418,6 +384,7 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

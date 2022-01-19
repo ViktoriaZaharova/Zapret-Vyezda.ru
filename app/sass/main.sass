@@ -74,7 +74,7 @@ body
 
 html, body
   overflow-x: hidden
-  //height: 100%
+//height: 100%
 
 img
   display: block
@@ -107,6 +107,7 @@ input, textarea, select
   height: 60px
   font-size: 16px
   color: #000
+
   &::placeholder
     color: #4F4F4F
 
@@ -135,6 +136,7 @@ button, .btn
   transition: .3s ease
   width: 100%
   height: 60px
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -142,6 +144,7 @@ button, .btn
 .btn-accent
   background: $accent
   color: #fff
+
   &:hover, &:focus
     background: $hover
     color: #fff
@@ -151,6 +154,7 @@ button, .btn
   width: 20px
   margin: 0 0 0 20px
   cursor: pointer
+
   span
     width: 100%
     height: 2px
@@ -158,6 +162,7 @@ button, .btn
     border-radius: 2px
     display: block
     margin: 0 0 3px
+
     &:last-child
       margin: 0
 
@@ -166,6 +171,7 @@ button, .btn
   width: 20px
   height: 20px
   margin: 0 0 20px auto
+
   &:before, &:after
     content: ''
     position: absolute
@@ -174,8 +180,10 @@ button, .btn
     width: 2px
     height: 100%
     background: $accent
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -196,8 +204,10 @@ h2
   color: #4F4F4F
   font-size: 18px
   line-height: 120%
+
   p
     margin: 0 0 20px
+
     &:last-child
       margin: 0
 
@@ -221,14 +231,18 @@ footer
   background: $footer
   color: #fff
   padding: 17px 0 25px
+
   .logo
     color: #fff
+
   .logo-name
     color: #F2F2F2
+
   .menu
     li
       a
         color: #fff
+
   .header-box
     color: #fff
 
@@ -258,6 +272,7 @@ footer
     color: #588FD4
     display: flex
     align-items: center
+
     &:after
       content: '>'
       margin: 0 5px
@@ -265,6 +280,7 @@ footer
 
 .breadcrumb-item + .breadcrumb-item
   padding: 0
+
   &:before
     display: none
 
@@ -278,6 +294,7 @@ header
   align-items: center
   color: #333333
   font-size: 14px
+
   &:hover
     color: inherit
 
@@ -304,8 +321,10 @@ header
   margin: 0 auto
   font-size: 14px
   font-weight: bold
+
   li
     margin: 0 48px 0 0
+
     &:last-child
       margin: 0
 
@@ -313,8 +332,10 @@ header
       color: #333333
       padding: 0 0 6px
       border-bottom: 2px solid transparent
+
       &:hover
         color: $accent
+
     .current
       border-bottom: 2px solid #588FD4
 
@@ -325,8 +346,10 @@ header
   color: #4F4F4F
   font-size: 14px
   margin: 0 -45px 0 0
+
   &:hover
     color: inherit
+
   &__icon
     display: flex
     align-items: flex-start
@@ -335,13 +358,14 @@ header
     width: 24px
     height: 24px
     min-width: 24px
+
   span
     display: block
 
 .link-address
   font-size: 16px
   font-weight: bold
-  
+
 .mobile-menu
   display: none
   position: fixed
@@ -363,6 +387,7 @@ header
 .home
   background: #F8F8F8
   padding: 65px 0 35px
+
   .box-text
     max-width: 660px
     color: #4F4F4F
@@ -378,6 +403,7 @@ header
   position: relative
   z-index: 2
   line-height: 120%
+
   &-icon
     display: flex
     align-items: center
@@ -390,6 +416,7 @@ header
 .form-quiz
   position: relative
   z-index: 2
+
   input
     background: transparent
 
@@ -400,6 +427,7 @@ header
   justify-content: space-between
   flex-wrap: wrap
   margin: 0
+
   label
     width: calc(50% - 8px)
 
@@ -424,12 +452,13 @@ header
   min-width: 16px
   border: 2px solid #333333
     radius: 3px
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 8px
     height: 6px
 
@@ -454,7 +483,6 @@ header
   margin: 0 3px 0 0
 
 
-
 .form-quiz-info
   width: 100%
   padding: 14px 0 0 110px
@@ -471,6 +499,7 @@ header
 .statistics-box
   position: relative
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -481,11 +510,13 @@ header
     top: -13px
     right: -116px
     z-index: -1
+
   h2
     color: #333333
     font-size: 28px
     width: fit-content
     font-weight: 500
+
     span
       display: block
       font-size: 14px
@@ -513,6 +544,7 @@ header
 
 .label-date
   position: relative
+
   input
     padding: 24px 54px 0 15px
 
@@ -569,6 +601,7 @@ header
   top: 0
   right: 0
   border-radius: 0 5px 5px 0
+
   b
     display: none
 
@@ -641,8 +674,10 @@ header
   justify-content: center
   cursor: pointer
   outline: none
+
   .ui-icon
     display: none
+
   &:hover, &:focus
     outline: none
     border: none
@@ -664,11 +699,13 @@ header
 
 .ui-datepicker-calendar
   margin: 3px 0 0
+
   td, th
     font-size: 18px
     font-weight: normal
     width: 30px
     height: 30px
+
   tbody
     td
       font-size: 12px
@@ -703,6 +740,7 @@ header
 
 .ui-datepicker-week-end + .ui-datepicker-week-end
   color: #EB5757
+
   .ui-state-default
     color: #EB5757
 
@@ -716,12 +754,14 @@ header
   line-height: 150%
   font-size: 8px
   color: #4F4F4F
+
   &__icon
     width: 23px
     height: 18px
     display: flex
     align-items: center
     justify-content: center
+
   &__body
     width: calc(100% - 23px)
     padding: 0 0 0 9px
@@ -735,9 +775,11 @@ header
   position: relative
   display: none
   margin: 0 0 0 auto
+
   h4
     font-size: 14px
     color: #fff
+
   &__title
     position: relative
 
@@ -746,16 +788,20 @@ header
       background: #2862AC
       border-radius: 6px 6px 0 0
       color: #fff
+
       h3
         font-size: 21px
+
     &-bottom
       font-family: 'Open Sans', sans-serif
       position: relative
       overflow: hidden
       padding: 28px 14px 14px
+
       .alert-box
         margin: 20px 0 0
         max-width: 420px
+
     h4
       width: 100%
       margin: 0 0 25px
@@ -770,11 +816,13 @@ header
       opacity: .10
       max-width: 571px
       width: 100%
+
   &__footer
     box-shadow: 0px 16.4236px 48.6624px rgba(0, 0, 0, 0.07), 0px 8.1851px 17.7626px rgba(0, 0, 0, 0.046714), 0px 5.10686px 8.62341px rgba(0, 0, 0, 0.0368662), 0px 3.20758px 4.22735px rgba(0, 0, 0, 0.0282676), 0px 1.61253px 1.6715px rgba(0, 0, 0, 0.0176825)
     background: rgba(#6FCF97, .15)
     padding: 19px 7px 22px 11px
     font-family: 'Open Sans', sans-serif
+
   &__body
     width: 100%
     background: #2D9CDB
@@ -783,11 +831,12 @@ header
     padding: 8px 13px 13px 16px
     font-family: 'Open Sans', sans-serif
     z-index: 1
+
   &__icon
     position: absolute
     right: 0
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     filter: blur(0.60828px)
     max-width: 90px
     width: 100%
@@ -796,10 +845,12 @@ header
   &__content
     width: 100%
     font-family: 'Open Sans', sans-serif
+
     &-top
       width: 100%
       padding: 10px 18px
       background: #2D9CDB
+
     &-bottom
       width: 100%
       padding: 31px 4px
@@ -815,9 +866,11 @@ header
 
   &:last-child
     margin: 0
+
   p
     padding: 10px 8px
     font-weight: bold
+
   .box-text
     width: 50%
     font-weight: normal
@@ -825,8 +878,10 @@ header
     padding: 10px 10px 10px 8px
     line-height: 150%
     margin: 0
+
     strong
       font-weight: bold
+
   .color-green
     color: #007349
 
@@ -854,167 +909,23 @@ header
   font-size: 10px
   font-weight: bold
   margin: 0 34px 0 0
+
   &:last-child
     margin: 0
+
   li
     display: flex
     align-items: center
     margin: 0 0 10px
+
   span
     font-weight: normal
+
   p
     margin: 0 5px 0 0
 
 .result-of-checking
   width: 100%
-
-.loader_content
-  display: flex
-  flex-direction: column
-  text-align: center
-
-
-.loader-title_loading
-  display: block
-  text-align: center
-
-.loader-icon
-  margin: 0 auto 20px
-  display: flex
-  align-items: center
-  justify-content: center
-  max-width: 80px
-  width: 100%
-
-.lds-default
-  display: inline-block
-  position: relative
-  width: 80px
-  height: 80px
-  margin: 0 auto 20px
-  div
-    position: absolute
-    width: 8px
-    height: 8px
-    background: #314382
-    border-radius: 50%
-    -webkit-animation: lds-default 1.8s linear infinite
-    animation: lds-default 1.8s linear infinite
-
-.loader
-  margin: 0 auto 20px
-  .lds-default div
-    &:nth-child(1)
-      -webkit-animation-delay: 0s
-      animation-delay: 0s
-      top: 37px
-      left: 66px
-      -webkit-animation-delay: 0s
-      animation-delay: 0s
-      top: 37px
-      left: 66px
-
-    &:nth-child(2)
-      -webkit-animation-delay: -0.15s
-      animation-delay: -0.15s
-      top: 22px
-      left: 62px
-
-    &:nth-child(3)
-      -webkit-animation-delay: -0.3s
-      animation-delay: -0.3s
-      top: 11px
-      left: 52px
-
-    &:nth-child(4)
-      -webkit-animation-delay: -0.45s
-      animation-delay: -0.45s
-      top: 7px
-      left: 37px
-
-    &:nth-child(5)
-      -webkit-animation-delay: -0.6s
-      animation-delay: -0.6s
-      top: 11px
-      left: 22px
-
-    &:nth-child(6)
-      -webkit-animation-delay: -0.75s
-      animation-delay: -0.75s
-      top: 22px
-      left: 11px
-
-    &:nth-child(7)
-      -webkit-animation-delay: -0.9s
-      animation-delay: -0.9s
-      top: 37px
-      left: 7px
-
-    &:nth-child(8)
-      -webkit-animation-delay: -1.05s
-      animation-delay: -1.05s
-      top: 52px
-      left: 11px
-
-    &:nth-child(9)
-      -webkit-animation-delay: -1.2s
-      animation-delay: -1.2s
-      top: 62px
-      left: 22px
-
-    &:nth-child(10)
-      -webkit-animation-delay: -1.35s
-      animation-delay: -1.35s
-      top: 66px
-      left: 37px
-
-    &:nth-child(11)
-      -webkit-animation-delay: -1.5s
-      animation-delay: -1.5s
-      top: 62px
-      left: 52px
-
-    &:nth-child(12)
-      -webkit-animation-delay: -1.65s
-      animation-delay: -1.65s
-      top: 52px
-      left: 62px
-
-.loader-timer
-  text-align: center
-  background: transparent
-  border: none
-    radius: 0
-  font-size: 15px
-  color: #000
-  display: block
-  font-weight: bold
-
-/* анимация лоадера
-@-webkit-keyframes lds-default
-  0%,
-  20%,
-  80%,
-  100%
-    -webkit-transform: scale(0.7)
-    transform: scale(0.7)
-
-  50%
-    -webkit-transform: scale(1.6)
-    transform: scale(1.6)
-
-@keyframes lds-default
-  0%,
-  20%,
-  80%,
-  100%
-    -webkit-transform: scale(0.7)
-    transform: scale(0.7)
-
-  50%
-    -webkit-transform: scale(1.6)
-    transform: scale(1.6)
-
 
 
 .result-of-checking-box
@@ -1024,20 +935,25 @@ header
   align-items: center
   font-size: 14px
   font-weight: 500
+
   &__img
     display: flex
     align-items: center
     justify-content: center
     width: 65px
+
   &__body
     width: calc(100% - 65px - 28px)
     padding: 0 0 0 22px
+
   &__icon
-    width: 28px
-    display: none
+    width: 34px
+    display: flex
     align-items: center
     justify-content: center
     transition: .3s ease
+    .icon-hidden
+      display: none
   h3
     color: #333333
     font-weight: 500
@@ -1047,25 +963,56 @@ header
   &:last-child
     margin: 0
 
+.result-status
+  opacity: 0
+
+.ring-1
+  width: 10px
+  height: 10px
+  margin: 0 auto
+  padding: 10px
+  border: 7px dashed #4b9cdb
+  border-radius: 100%
+
+.loader-icon
+  animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite
+
+@keyframes loadingD
+  0%
+    transform: rotate(0deg)
+
+  50%
+    transform: rotate(180deg)
+
+  100%
+    transform: rotate(360deg)
+
+
 .result-of-checking-total
   width: 100%
   margin: 52px 0 0
-  display: none
+  .loader-icon
+    margin: 0 auto 10px
   h2
     margin: 0 0 11px
     font-size: 22px
+    opacity: 0
     span
       font-weight: 500
+
+
 .answer
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   background: rgba(231, 231, 231, 0.6)
   width: 100%
   padding: 15px 20px
+
   h3
     font-size: 17px
     font-weight: 500
     color: #B40000
     margin: 0 0 11px
+
   .box-text
     font-size: 14px
     line-height: 120%
@@ -1081,14 +1028,17 @@ header
 /*==========  seo section ==========*/
 .seo-content
   padding: 50px 0 85px
+
   .box-text
     color: #000
     line-height: 150%
+
   &__icon
     display: flex
     align-items: center
     justify-content: center
     width: 73px
+
   &__body
     width: calc(100% - 73px)
     padding: 0 0 0 35px
@@ -1106,11 +1056,13 @@ header
 .title-section
   background: #F8F8F8
   padding: 12px 0 25px
+
   h2
     text-transform: uppercase
 
 .page
   padding: 115px 0 28px
+
   h1
     margin: 0 0 25px
     font-weight: 500
@@ -1125,6 +1077,7 @@ header
   align-items: center
   flex-wrap: wrap
   margin: 48px 0 20px
+
   li
     margin: 0 50px 10px 0
     display: flex
@@ -1155,6 +1108,7 @@ header
   align-items: flex-start
   font-size: 14px
   color: rgba(#4F4F4F, .75)
+
   &__icon
     display: flex
     align-items: center
@@ -1162,17 +1116,21 @@ header
     margin: 24px 0 0
     width: 30px
     height: 30px
+
   &__body
     width: calc(100% - 30px)
     padding: 0 0 0 5px
+
   h3
     margin: 0 0 5px
     color: #111111
     font-size: 16px
     font-weight: bold
+
   .links
     color: rgba(#111, .75)
     font-size: 16px
+
   .mail
     font-weight: 700
     color: rgba(#4F4F4F, .75)
@@ -1181,11 +1139,36 @@ header
 
 .home-departure
   padding: 15px 0 35px
+
   .btn-submit
     margin: 0
 
 .form-group-my
-  margin: 49px 0 0
+  margin: 49px 0 34px
+  label
+    margin: 0 0 18px
+    text-align: right
+  input
+    height: 60px
+    border: 1px solid #828282
+      radius: 2px
+    padding: 0 26px
+    color: #4F4F4F
+    font-size: 16px
+    &::placeholder
+      color: #4F4F4F
+
+.input-toggle
+  cursor: pointer
+
+.input-tab
+  display: none
+
+.input-tab.active
+  display: block
+
+.input-toggle.active
+  font-weight: bold
 
 .label-text
   text-align: right
@@ -1194,13 +1177,16 @@ header
   padding: 122px 0 70px
 
   background: #F2F2F2
+
   h2
     margin: 0 0 80px
     text-transform: uppercase
     font-size: 40px
+
   .box-text
     ul
       margin: 0 0 20px
+
       li
         display: flex
         align-items: center
@@ -1219,6 +1205,7 @@ header
   display: flex
   align-items: center
   flex-wrap: wrap
+
   .btn
     max-width: 303px
 

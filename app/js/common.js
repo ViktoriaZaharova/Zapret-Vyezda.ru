@@ -49,6 +49,14 @@ $(".form-quiz__content").on("afterChange", function (event) {
         $('.box-instructions').fadeIn();
         $('.btn-submit').css('display', 'flex');
 
+        $(document).ready(function () {
+            setInterval(function() {
+                $('.result-status').css('opacity', 1);
+                $('.icon-hidden').fadeIn();
+                $('.result-of-checking-total h2').css('opacity', 1);
+                $('.loader-icon').fadeOut();
+            }, 5000);
+        });
     }
 
 });
@@ -71,6 +79,18 @@ $('.menu li a').each(function () {
     }
 });
 // end
+
+$(".input-toggle").on('click', function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.input-tab[data-tab="'+ id +'"]');
+
+    $('.input-toggle.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.input-tab.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
 
 
 $(function () {
@@ -111,6 +131,7 @@ $('.datepicker').inputmask({
     showMaskOnHover: false,
 });
 
+$('[name="phone"]').inputmask('+7(999)999-99-99');
 
 
 
