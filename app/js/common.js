@@ -50,16 +50,32 @@ $(".form-quiz__content").on("afterChange", function (event) {
         $('.btn-submit').css('display', 'flex');
 
         $(document).ready(function () {
-            setInterval(function() {
-                $('.result-status').css('opacity', 1);
-                $('.icon-hidden').fadeIn();
-                $('.result-of-checking-total h2').css('opacity', 1);
-                $('.loader-icon').fadeOut();
-            }, 5000);
+            setInterval(function () {
+                $('.result-status, .result-of-checking-total h2, .icon-hidden').fadeIn();
+                $('.loader-icon, .timer').fadeOut();
+            }, 15000);
+        });
+
+        $(document).ready(function () {
+            var count = 1500;
+
+            var counter = setInterval(timer, 10);
+
+            function timer() {
+                if (count <= 0) {
+                    clearInterval(counter);
+                    return;
+                }
+                count--;
+                var countVal = count / 100;
+                $(".timer-val").html(countVal);
+            }
         });
     }
 
 });
+
+
 
 
 $('.btn-burger').on('click', function () {
@@ -82,7 +98,7 @@ $('.menu li a').each(function () {
 
 $(".input-toggle").on('click', function () {
     var id = $(this).attr('data-tab'),
-        content = $('.input-tab[data-tab="'+ id +'"]');
+        content = $('.input-tab[data-tab="' + id + '"]');
 
     $('.input-toggle.active').removeClass('active'); // 1
     $(this).addClass('active'); // 2
@@ -90,7 +106,6 @@ $(".input-toggle").on('click', function () {
     $('.input-tab.active').removeClass('active'); // 3
     content.addClass('active'); // 4
 });
-
 
 
 $(function () {
