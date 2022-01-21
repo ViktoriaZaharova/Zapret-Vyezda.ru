@@ -498,7 +498,7 @@ header {
 
 .btn-submit {
   display: none;
-  margin: 70px 0 0; }
+  margin: 10px 0 0; }
 
 .counter-slide {
   display: -webkit-box;
@@ -1048,7 +1048,8 @@ header {
   font-weight: 500; }
 
 .timer-val {
-  margin: 0 3px; }
+  margin: 0 3px;
+  min-width: 40px; }
 
 .ring-1 {
   width: 10px;
